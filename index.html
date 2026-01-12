@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snappyman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="passive-mode">
+    <canvas id="selection-canvas"></canvas>
+    
+    <div id="ui-toolbar">
+        <div style="display:flex; flex-direction:column; justify-content:center; padding-right:10px;">
+            <span style="font-size:24px; color:#fff; letter-spacing:1px; text-shadow: 2px 2px #000;">SNAPPYMAN</span>
+        </div>
+        
+        <button id="btn-toggle" class="pixel-btn btn-off" style="width: 60px;">OFF</button>
+        <button id="btn-lock" class="pixel-btn">LOCK SELECTION</button>
+        <button id="btn-snap" class="pixel-btn">SNAP (Ctrl+Shft+S)</button>
+        <button id="btn-reset" class="pixel-btn">RESET</button>
+        <button id="btn-quit" class="pixel-btn" style="background:#522; border-color:#844;">EXIT</button>
+        
+        <button id="btn-folder" class="clean-icon-btn" title="Open Screenshots Folder">
+            <img src="assets/icon_folder.png" alt="Folder">
+        </button>
+    </div>
+
+    <div id="custom-popup" class="pixel-popup">
+        <div class="popup-header">SYSTEM MESSAGE</div>
+        <div id="popup-text" class="popup-content"></div>
+        <div class="popup-actions">
+            <button id="popup-ok" class="pixel-btn popup-ok-btn" style="min-width: 80px;">OK</button>
+        </div>
+    </div>
+
+    <div id="status" class="status-bar">SAVED TO DISK</div>
+    <div id="flash" class="flash-overlay"></div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
