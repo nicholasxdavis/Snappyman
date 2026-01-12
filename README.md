@@ -5,10 +5,6 @@
 </p>
 
 <p align="center">
-  <img src="assets/small_icon.png" alt="Snappyman Icon">
-</p>
-
-<p align="center">
   <a href="https://github.com/nicholasxdavis/snappyman">
     <img src="https://github.com/nicholasxdavis/Snappyman/blob/main/assets/preview.png?raw=true" alt="Preview">
   </a>
